@@ -71,7 +71,7 @@ export default function Drawings({ data, setData, query }) {
       <Table
         cols={["ID", "Title", "Project", "Discipline", "Type", "Rev", "Status", "Date"]}
         rows={list.map(d => [
-          <Mono key="i">{d.id}</Mono>,
+          <Mono key="i" nowrap>{d.id}</Mono>,
           <div key="t">
             <strong style={{ fontSize: 13 }}>{d.title}</strong>
             {d.notes && <div style={{ fontSize: 11.5, color: T.inkFaint }}>{d.notes}</div>}

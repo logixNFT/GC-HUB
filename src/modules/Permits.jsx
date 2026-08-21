@@ -122,7 +122,7 @@ export default function Permits({ data, setData, query }) {
         rows={list.map(p => {
           const [c, bg] = STAGE_COLORS[p.stage] || STAGE_COLORS.Identified;
           return [
-            <Mono key="i">{p.id}</Mono>,
+            <Mono key="i" nowrap>{p.id}</Mono>,
             <div key="t">
               <strong style={{ fontSize: 13 }}>{p.title}</strong>
               <div style={{ fontSize: 11.5, color: T.inkFaint, maxWidth: 340 }}>

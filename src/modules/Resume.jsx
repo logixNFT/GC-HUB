@@ -65,7 +65,9 @@ export default function Resume({ data }) {
             <div key={p.id} style={{ marginBottom: 18, breakInside: "avoid" }}>
               <div style={{ display: "flex", justifyContent: "space-between", gap: 10, alignItems: "baseline" }}>
                 <div style={{ fontSize: 14, fontWeight: 700, color: T.navy }}>{p.name}</div>
-                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11.5, color: T.orange, fontWeight: 700, whiteSpace: "nowrap" }}>{fmtMoney(p.value)}</div>
+                {p.value > 0 && (
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11.5, color: T.orange, fontWeight: 700, whiteSpace: "nowrap" }}>{fmtMoney(p.value)}</div>
+                )}
               </div>
               <div style={{ fontSize: 11.5, color: T.inkSoft, marginTop: 2 }}>
                 {p.role} · {p.client} · {p.delivery} · {p.location} · {p.start}–{p.end}

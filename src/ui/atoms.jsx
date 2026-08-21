@@ -10,8 +10,12 @@ export const Pill = ({ color, bg, children }) => (
   }}>{children}</span>
 );
 
-export const Mono = ({ children, dim, title }) => (
-  <span title={title} style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11.5, color: dim ? T.inkFaint : T.inkSoft }}>{children}</span>
+export const Mono = ({ children, dim, title, nowrap }) => (
+  <span title={title} style={{
+    fontFamily: "'JetBrains Mono', monospace", fontSize: 11.5,
+    color: dim ? T.inkFaint : T.inkSoft,
+    whiteSpace: nowrap ? "nowrap" : undefined,
+  }}>{children}</span>
 );
 
 export const Field = ({ label, children, span }) => (

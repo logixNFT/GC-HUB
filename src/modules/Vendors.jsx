@@ -64,7 +64,7 @@ export default function Vendors({ data, setData, query }) {
         rows={list.map(v => {
           const r = v.rating || 0;
           return [
-            <Mono key="i">{v.id}</Mono>,
+            <Mono key="i" nowrap>{v.id}</Mono>,
             <strong key="c" style={{ fontSize: 13 }}>{v.company}</strong>,
             v.trade,
             <Pill key="s"

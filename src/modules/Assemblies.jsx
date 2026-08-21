@@ -37,7 +37,7 @@ export default function Assemblies({ data, query }) {
           const isOpen = open === a.id;
           return (
             <div key={a.id} style={{ background: T.card, border: `1px solid ${T.line}`, borderRadius: 8, overflow: "hidden" }}>
-              <div style={{ padding: "14px 16px", borderBottom: `1px solid ${T.line}`, display: "flex", justifyContent: "space-between", gap: 8 }}>
+              <div style={{ padding: "14px 16px", borderBottom: `1px solid ${T.line}`, display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
                 <div style={{ minWidth: 0 }}>
                   <div style={{ fontFamily: "'Fraunces', serif", fontSize: 16, fontWeight: 600, color: T.navy }}>{a.name}</div>
                   <Mono dim>{a.id} · {a.spec}</Mono>
