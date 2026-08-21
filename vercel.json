@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/((?!gc-hub-data\\.json).*)", "destination": "/index.html" }]
+}

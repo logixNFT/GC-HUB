@@ -1,0 +1,13 @@
+node_modules
+dist
+.vercel
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+
+# Real operating data stays out of the repo — this is a public repo.
+# Work in the app, Export JSON, keep the file here locally.
+*.local.json
+gc-hub-data.local.json
