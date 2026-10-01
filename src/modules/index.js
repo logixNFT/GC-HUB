@@ -5,6 +5,7 @@ import Assemblies from "./Assemblies.jsx";
 import Permits from "./Permits.jsx";
 import Projects from "./Projects.jsx";
 import Resume from "./Resume.jsx";
+import Factory from "./Factory.jsx";
 
 /* ---------- MODULES map (schema-driven) ----------
    Add a module: write the component, drop it in here.
@@ -16,5 +17,6 @@ export const MODULES = [
   { key: "assemblies", label: "Assemblies", comp: Assemblies, countKey: "assemblies" },
   { key: "permits", label: "Permits & Compliance", comp: Permits, countKey: "permits" },
   { key: "projects", label: "Projects", comp: Projects, countKey: "projects" },
+  { key: "factory", label: "Factory", comp: Factory },
   { key: "resume", label: "Resume / Portfolio", comp: Resume },
 ];
